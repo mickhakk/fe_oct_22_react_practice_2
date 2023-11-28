@@ -12,6 +12,7 @@ const photos = photosFromServer.map((photo) => {
     .find(alb => alb.id === photo.albumId);
   const user = usersFromServer.find(us => us.id === album.userId);
 
+
   return { ...photo, album, user };
 });
 
