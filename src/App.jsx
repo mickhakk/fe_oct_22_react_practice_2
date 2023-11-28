@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
 import './App.scss';
 import cn from 'classnames';
 import { useState } from 'react';
@@ -175,6 +176,7 @@ export const PhotosList = ({
                 </td>
                 <td>
                   <button
+                    type="button"
                     onClick={() => moveUp(index)}
                     data-cy={`MoveUpButton-${photo.id}`}
                     className="button is-small is-info"
@@ -182,6 +184,7 @@ export const PhotosList = ({
                     &uarr;
                   </button>
                   <button
+                    type="button"
                     onClick={() => moveDown(index)}
                     data-cy={`MoveDownButton-${photo.id}`}
                     className="button is-small is-info"
