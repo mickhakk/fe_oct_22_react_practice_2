@@ -12,7 +12,6 @@ const photos = photosFromServer.map((photo) => {
     .find(alb => alb.id === photo.albumId);
   const user = usersFromServer.find(us => us.id === album.userId);
 
-
   return { ...photo, album, user };
 });
 
@@ -319,7 +318,6 @@ export const App = () => {
               selectedUser={selectedUser}
               setSelectedUser={setSelectedUser}
             />
-
             <SearchField
               filterName={filterName}
               setFilterName={setFilterName}
